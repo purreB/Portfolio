@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito&display=swap");
+
+/* General Styling */
+html {
+  font-size: 100%;
+}
+body {
+  margin: auto;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+  color: #e95841;
+  text-shadow: 1px 0 black;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+/* Top Section */
+.top {
+  display: flex;
+}
+
+.topLeft {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  width: 35rem;
+  display: flex;
+}
+
+.topRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 16rem;
+}
+
+.topRight img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fab.fa-github {
+  font-size: 1.5rem;
+  color: #e95841;
+  text-decoration: none;
+}
+
+.fab.fa-instagram {
+  font-size: 1.5rem;
+  color: #e95841;
+  text-decoration: none;
+}
+
+.fab.fa-linkedin-in {
+  font-size: 1.5rem;
+  color: #e95841;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* Project showcase */
+.TaxCalculator {
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  flex-direction: row;
+}
+
+.TaxLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Education */
+.Education {
+  grid-area: 2 / 1 / 3 / 3;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5rem;
+}
+
+.EducationRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  min-width: 20rem;
+}
+
+/* Bottom Section */
+.bottom.text {
+  text-align: left;
+}
+
+.bottom.logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Button Effect and Styling */
+a:hover {
+  opacity: 0.7;
+}
+
+button.red {
+  width: 168px;
+  height: 45px;
+  background: linear-gradient(
+    90deg,
+    rgba(233, 88, 65, 1) 35%,
+    rgba(233, 75, 99, 1) 100%
+  );
+  color: #f9f9f9;
+  border-radius: 40px;
+  box-shadow: #e95841;
+  font-family: "Montserrat" sans-serif;
+}
+
+button.white {
+  width: 168px;
+  height: 45px;
+  color: #e95841;
+  background-color: #f9f9f9;
+  border-radius: 40px;
+  font-family: "Montserrat" sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Media queries and web responsiveness */
+@media screen and (max-width: 800px) {
+  body {
+    margin: auto;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .topRight {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    margin: auto;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .topRight {
+    padding-left: 0;
+  }
+}
