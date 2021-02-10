@@ -199,7 +199,11 @@ button {
 }
 
 @media screen and (min-width: 1030px) {
-  body {
+  .top {
+    padding-left: 13rem;
+  }
+
+  .grid-container {
     padding-left: 13rem;
   }
 }
